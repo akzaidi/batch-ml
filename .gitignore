@@ -1,0 +1,4 @@
+etc/
+secrets.yaml
+ssh.yaml
+*.swp

@@ -79,6 +79,6 @@ Let's also get the credentials for the storage account:
 SAKEY="$(az storage account keys list \
 	--account-name azbatchsa \
 	--resource-group azbatchrg \
-	jq '.[0].value')"
+	| jq '.[0].value')"
 echo "Storage Account Keys =" $SAKEY >> credentials.txt
 ```
